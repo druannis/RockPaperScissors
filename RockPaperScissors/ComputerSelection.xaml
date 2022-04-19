@@ -1,0 +1,38 @@
+﻿<Page x:Class="RockPaperScissors.ComputerSelection"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RockPaperScissors"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="300"
+      Title="ComputerSelection">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="#FF904545" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox TextWrapping="Wrap" Text="The Computer Has Made Its Choice! Select Continue to see who won" Margin="50,10,49,310" FontSize="25" FontFamily="Comic Sans MS" Background="#FF6E3030" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.374"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.899"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button Content="Continue" Margin="66,279,65,111" Click="TakeToFinals">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF80A54D" Offset="0.397"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Page>
