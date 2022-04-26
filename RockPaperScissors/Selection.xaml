@@ -10,12 +10,9 @@
 
     <Grid>
         <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="Black" Offset="1"/>
-                <GradientStop Color="#FF8E3E3E" Offset="0"/>
-            </LinearGradientBrush>
+            <ImageBrush ImageSource="/rpsbg.jpg"/>
         </Grid.Background>
-        <TextBox TextWrapping="Wrap" Text="Please Make Your Selection To Use Against The Computer!" Margin="50,10,49,317" FontSize="25" FontFamily="Comic Sans MS" Background="#FF6E3030"/>
+        <TextBlock TextWrapping="Wrap" Text="Please Make Your Selection To Use Against The Computer!" Margin="50,10,49,317" FontSize="25" FontFamily="Comic Sans MS" Background="#FFF8931F"/>
         <Button Margin="10,188,163,173" Click="RockSelect">
             <Button.Background>
                 <ImageBrush ImageSource="/rock.jpg"/>

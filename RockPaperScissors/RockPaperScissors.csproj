@@ -10,12 +10,14 @@
   <ItemGroup>
     <None Remove="Paper.png" />
     <None Remove="rock.jpg" />
+    <None Remove="rpsbg.jpg" />
     <None Remove="Scissors.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Paper.png" />
     <Resource Include="rock.jpg" />
+    <Resource Include="rpsbg.jpg" />
     <Resource Include="Scissors.jpg" />
   </ItemGroup>
 

@@ -7,15 +7,15 @@
       mc:Ignorable="d" 
       d:DesignHeight="500" d:DesignWidth="300"
       Title="LaunchPage">
+    <Page.Background>
+        <ImageBrush/>
+    </Page.Background>
 
     <Grid>
         <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="Black" Offset="1"/>
-                <GradientStop Color="#FFA24343" Offset="0"/>
-            </LinearGradientBrush>
+            <ImageBrush ImageSource="/rpsbg.jpg"/>
         </Grid.Background>
-        <TextBox TextWrapping="Wrap" Text="Welcome to Rock Paper Scissors" Margin="32,37,41,226" TextChanged="TextBox_TextChanged" RenderTransformOrigin="0.5,0.5" Background="#FF8B3939" FontSize="35" FontFamily="Comic Sans MS">
+        <TextBox TextWrapping="Wrap" Text="Welcome to Rock Paper Scissors" Margin="32,37,41,226" TextChanged="TextBox_TextChanged" RenderTransformOrigin="0.5,0.5" FontSize="35" FontFamily="Comic Sans MS" Background="#FFF9931F" BorderBrush="Black">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -25,14 +25,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Button Content="Continue" Margin="66,279,65,111" Click="TakeToSelection">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black"/>
-                    <GradientStop Color="#FF80A54D" Offset="0.397"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
+        <Button Content="Continue" Margin="66,279,65,111" Click="TakeToSelection" BorderBrush="Black" Background="#FFF3BB7C"/>
 
     </Grid>
 </Page>
